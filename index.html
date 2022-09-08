@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 100px;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>扫描证书结果</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <style>
+        body {
+            background-color: #FBFBFB;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .pdfWrap {
+            padding-top: .40rem;
+        }
+
+        .pdfWrap>div {
+            display: inline-block;
+        }
+
+        .tableWrap {
+            font-size: 1em;
+        }
+
+        .course-type,
+        .course-hour {
+            display: inline-block;
+            vertical-align: middle;
+            width: 3.0rem;
+        }
+
+        .courList {
+            width: 6.9rem;
+            margin: 0 auto;
+            margin-bottom: .28rem;
+            padding-bottom: 1.2rem;
+            /* padding-top: .3rem; */
+        }
+
+        .courseItem {
+            border-radius: .12rem;
+            box-shadow: 0 0 .08rem .04rem rgba(0, 0, 0, 0.05);
+            font-size: .28rem;
+            line-height: .48rem;
+            text-align: left;
+            padding: .28rem .40rem;
+            color: #333;
+            margin-bottom: .28rem;
+
+        }
+        .courseItem .course-img ,.courseItem img{
+                
+            width: 100%;
+            height: 3rem;
+
+
+        }
+
+        .courseItem>div {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .course-result span {
+            color: #FF4936;
+
+        }
+
+        th,
+        td {
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+        }
+
+        #the-canvas,
+
+        #imgurl {
+            width: 6.76rem;
+            margin: 0 auto;
+        }
+
+        .bottom-list {
+            height: 1.12rem;
+            position: fixed;
+            bottom: 0;
+            background: #fff;
+            width: 100%;
+            padding: .18rem .4rem 0 .4rem;
+            font-size: .28rem;
+        }
+
+        .bottom-list>div {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .heji {
+            font-size: .28rem;
+        }
+
+        .texts {
+            display: inline-block;
+            line-height: .46rem;
+            width: 6rem;
+        }
+
+        .total-time {
+            color: #FF4936;
+        }
+
+        .times-box>span {
+            width: 48%;
+            display: inline-block;
+        }
+
+        em {
+            font-style: normal;
+        }
+        canvas{
+            margin: .2rem auto;
+            width: 95%;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 7.5rem;">
+        <div style="text-align: center;" class="wrap">
+            <div>
+                <a href="./config_files/620103196801291950.jpg甘肃省2021年度公需课培训计划.pdf" download="./config_files/620103196801291950.jpg甘肃省2021年度公需课培训计划.pdf"><img id="imgurl" src="./config_files/481fdsfdsbhjfs7fsd7r67ft7sdt67ftsd78fy7s.png"></a>
+            </div>
+            <div class="courList">
+                <div class="courseItem">
+                    <div class="course-img"><img src="./config_files/2c8c89de74d34ca4bd46facd3929cdce.png"></div>
+                    <div class="course-name">课程名称：<span> 实现中华民族伟大复兴的行动纲领——学习习近平建党百年讲话心得交流</span></div>
+                    <div class="course-teacher">主讲人：<span>吴德贵</span></div>
+                    <div class="course-type">课程类型：<span>公需课</span></div>
+                    <div class="course-hour">课时：<span>2</span></div>
+                    <div class="course-time">完成时间：<span>2021-10-08</span></div>
+                    <div class="course-result">考核结果：<span>合格</span></div>
+                </div>
+                <div class="courseItem">
+                    <div class="course-img"><img src="./config_files/34d3a0243da24460a5c1dfa3449da8cd.png"></div>
+                    <div class="course-name">课程名称：<span> 学习《中华人民共和国国民经济和社会发展第十四个五年规划和2035年远景目标纲要》</span></div>
+                    <div class="course-teacher">主讲人：<span>郑延涛</span></div>
+                    <div class="course-type">课程类型：<span>公需课</span></div>
+                    <div class="course-hour">课时：<span>6</span></div>
+                    <div class="course-time">完成时间：<span>2021-10-08</span></div>
+                    <div class="course-result">考核结果：<span>合格</span></div>
+                </div>
+                <div class="courseItem">
+                    <div class="course-img"><img src="./config_files/d376d841e17443b4a16a3795f8e2ee85.png"></div>
+                    <div class="course-name">课程名称：<span> 黄河流域（上游）生态保护和高质量发展</span></div>
+                    <div class="course-teacher">主讲人：<span>刘英</span></div>
+                    <div class="course-type">课程类型：<span>公需课</span></div>
+                    <div class="course-hour">课时：<span>3</span></div>
+                    <div class="course-time">完成时间：<span>2021-10-08</span></div>
+                    <div class="course-result">考核结果：<span>合格</span></div>
+                </div>
+                <div class="courseItem">
+                    <div class="course-img"><img src="./config_files/ed8ffbbea5df45b9b2c4aa79733e2d23.png"></div>
+                    <div class="course-name">课程名称：<span> 从党史看百年未有之大变局</span></div>
+                    <div class="course-teacher">主讲人：<span>杨冬权</span></div>
+                    <div class="course-type">课程类型：<span>公需课</span></div>
+                    <div class="course-hour">课时：<span>3</span></div>
+                    <div class="course-time">完成时间：<span>2021-10-08</span></div>
+                    <div class="course-result">考核结果：<span>合格</span></div>
+                </div>
+                <div class="courseItem">
+                    <div class="course-img"><img src="./config_files/170e9fc139b0478ba1e48ba62af4fb26.png"></div>
+                    <div class="course-name">课程名称：<span> 中国共产党与新中国经济建设——站起来、富起来、强起来</span></div>
+                    <div class="course-teacher">主讲人：<span>武力</span></div>
+                    <div class="course-type">课程类型：<span>公需课</span></div>
+                    <div class="course-hour">课时：<span>5</span></div>
+                    <div class="course-time">完成时间：<span>2021-10-08</span></div>
+                    <div class="course-result">考核结果：<span>合格</span></div>
+                </div>
+                <div class="courseItem">
+                    <div class="course-img"><img src="./config_files/73a5e661f424493bb8d94bfa03b0371d.png"></div>
+                    <div class="course-name">课程名称：<span> 推进乡村产业高质量发展——以定西市为例</span></div>
+                    <div class="course-teacher">主讲人：<span>何军民</span></div>
+                    <div class="course-type">课程类型：<span>公需课</span></div>
+                    <div class="course-hour">课时：<span>3</span></div>
+                    <div class="course-time">完成时间：<span>2021-10-08</span></div>
+                    <div class="course-result">考核结果：<span>合格</span></div>
+                </div>
+                <div class="courseItem">
+                    <div class="course-img"><img src="./config_files/b86e4fce83bd47b38295795a4905e494.jpg"></div>
+                    <div class="course-name">课程名称：<span> 专业技术人员的职责、机遇和挑战</span></div>
+                    <div class="course-teacher">主讲人：<span>武力</span></div>
+                    <div class="course-type">课程类型：<span>公需课</span></div>
+                    <div class="course-hour">课时：<span>4</span></div>
+                    <div class="course-time">完成时间：<span>2021-09-25</span></div>
+                    <div class="course-result">考核结果：<span>合格</span></div>
+                </div>
+                <div class="courseItem">
+                    <div class="course-img"><img src="./config_files/530cf753478c41f88f674deb28a3ff39.png"></div>
+                    <div class="course-name">课程名称：<span> 疫情常态化下的新型冠状病毒疫情防控知识与实践</span></div>
+                    <div class="course-teacher">主讲人：<span>吴双胜</span></div>
+                    <div class="course-type">课程类型：<span>公需课</span></div>
+                    <div class="course-hour">课时：<span>4</span></div>
+                    <div class="course-time">完成时间：<span>2021-10-08</span></div>
+                    <div class="course-result">考核结果：<span>合格</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-list">
+            <div class="heji">合计</div>
+            <div class="texts">
+                <div>总课时:
+                    <span class="total-time">30课时</span>
+                </div>
+                <div class="times-box">
+                    <span class="gxk-time">公需课总课时: <em>30课时</em> </span>
+                    <span class="zyk-time">专业课总课时: <em>0课时</em></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./config_files/jquery.js"></script>
+    <!-- <script type='text/javascript' src="/testCard/js/url.js"></script> -->
+    <!-- 正式 -->
+    <script type="text/javascript" src="./config_files/url.js"></script>
+    <!-- 测试 -->
+    <script type="text/javascript" src="./config_files/pdf.js"></script>
+    <script type="text/javascript"></script>
+</body>
+
+</html>
